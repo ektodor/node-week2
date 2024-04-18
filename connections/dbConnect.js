@@ -7,10 +7,10 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 mongoose
-  .connect("mongodb://127.0.0.1:27017/post")
+  .connect(DB)
   .then(() => {
-    console.log("connect success");
+    console.log("資料庫連線成功");
   })
   .catch((e) => {
-    console.log(e);
+    console.log(e.message);
   });
