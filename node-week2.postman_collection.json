@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "0a6ba310-9285-4702-a140-b694100dcf4b",
+		"name": "node-week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33901968"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-week2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-week2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"測試文章 1\",\r\n  \"tag\":[\"A\",\"B\"],\r\n  \"content\":\"CC\",\r\n  \"likes\":5,\r\n  \"comments\":7,\r\n  \"description\":\"C~~\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-week2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-week2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://node-week2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-week2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://node-week2.onrender.com/posts/66211399734bd0b69a4a43ee",
+					"protocol": "https",
+					"host": [
+						"node-week2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"66211399734bd0b69a4a43ee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"測試文章 123\",\r\n  \"tag\":[\"C\",\"D\",\"E\"],\r\n  \"content\":\"CDE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-week2.onrender.com/posts/66211399734bd0b69a4a43ee",
+					"protocol": "https",
+					"host": [
+						"node-week2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"66211399734bd0b69a4a43ee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
